@@ -1,6 +1,6 @@
 {
   "name": "tinyrender",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "read.js",
   "directories": {
@@ -17,7 +17,6 @@
   },
   "devDependencies": {
     "chai": "^1.10.0",
-    "jsdox": "^0.4.9",
     "mocha": "^2.1.0"
   }
 }
