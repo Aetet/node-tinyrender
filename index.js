@@ -1,3 +1,3 @@
-module.exports = require('./lib/TgaColor');
+module.exports = require('./lib/TgaImage');
 
 
