@@ -1,5 +1,5 @@
 {
-  "name": "node-render",
+  "name": "tinyrender",
   "version": "0.0.1",
   "description": "",
   "main": "read.js",
@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "chai": "^1.10.0",
+    "jsdox": "^0.4.9",
     "mocha": "^2.1.0"
   }
 }
