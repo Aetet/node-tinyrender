@@ -1,7 +1,7 @@
 require('chai').should();
-var TGAHeader = require('../lib/TGAHeader');
+var TgaHeader = require('../lib/TgaHeader');
 
-describe('TGAHeader', function () {
+describe('TgaHeader', function () {
 	it('#pack', function () {
 		var a = { idLength: 0,
 			colorMapType: 0,
@@ -17,12 +17,12 @@ describe('TGAHeader', function () {
 			imageDescriptor: 0,
 			bytesPerPixel: 3 };
 
-			var res = TGAHeader.pack(a).toJSON();
+			var res = TgaHeader.pack(a).toJSON();
 			res.should.be.eql([ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 139, 5, 233, 3, 24, 0 ]);
 		});
 	it('#unpack', function () {
 		var header = new Buffer([ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 139, 5, 233, 3, 24, 0 ])
-		var obj = TGAHeader.unpack(header);
+		var obj = TgaHeader.unpack(header);
 		obj.should.be.deep.eql({ idLength: 0,
 			colorMapType: 0,
 			dataTypeCode: 2,
