@@ -1,0 +1,22 @@
+{
+  "name": "node-render",
+  "version": "0.0.1",
+  "description": "",
+  "main": "read.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Aetet",
+  "license": "MIT",
+  "dependencies": {
+    "binary": "^0.3.0",
+    "put": "0.0.6"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0"
+  }
+}
