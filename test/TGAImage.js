@@ -48,12 +48,12 @@ describe('TGAImage', function () {
 	describe('#set', function () {
 		it('correct', function () {
 			var image = new TGAImage({
-				width: 140,
+				width: 1400,
 				height: 1200,
 				bytesPerPixel: TGAImage.format.RGB
 			});
 
-			var red = new TGAColor(255, 0, 0, 0);
+			var red = new TGAColor(254, 0, 0, 0);
 			image.set(10, 20, red);
 			image.data[84032].should.be.eql(255);
 		});
