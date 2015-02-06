@@ -48,7 +48,7 @@ describe('TGAImage', function () {
 	describe('#set', function () {
 		it('correct', function () {
 			var image = new TGAImage({
-				width: 1400,
+				width: 140,
 				height: 1200,
 				bytesPerPixel: TGAImage.format.RGB
 			});
